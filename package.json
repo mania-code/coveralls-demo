@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "test": "nyc mocha",
-    "report-coverage": "nyc report --reporter=text-lcov | coveralls"
+    "report-coverage": "nyc report --reporter=lcov && cat coverage/lcov.info | coveralls"
   },
   "dependencies": {
     "express": "^4.18.2"
